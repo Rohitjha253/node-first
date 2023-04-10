@@ -1,3 +1,13 @@
+const Logger = require('./logger')
+
+const logger = new Logger();
+
+logger.on('message', (data) => console.log('called listerner',data));
+
+logger.log('hello world');
+
+
+/*
 const Person = require('./person');
 
 // import Person from
@@ -7,3 +17,6 @@ pers.welcome();
 
 
 //console.log(person);
+
+
+*/
